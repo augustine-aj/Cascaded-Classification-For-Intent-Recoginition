@@ -22,14 +22,18 @@ To get a local copy of the project up and running, follow these simple steps.
 
 ## Project Structure
 The project directory has the following structure:
-project-directory/
-├── data/
-│   └── faq_queries_intents.csv   # Your dataset file
-├── models/
-│   ├── route_model/              # Folder for the binary classification model
-│   └── non_symptom_model/        # Folder for the non-symptom checker classification model
-├── notebooks/
-│   └── intent_recognition.ipynb  # Your Jupyter notebook with the model code
-├── requirements.txt              # File listing the Python dependencies
-└── README.md                     # Project README file with information
+- **data/**: Contains the dataset used for training and testing the model.
+- **models/**: 
+  - **route_model/**: Folder for the binary classification model.
+  - **non_symptom_model/**: Folder for the non-symptom checker classification model.
+- **notebooks/**: Contains the Jupyter notebook with the model code.
+- **requirements.txt**: Lists the Python dependencies required for the project.
+- **README.md**: This file, providing an overview of the project.
+
+## Getting Started
+
+1. Clone the repository.
+2. Install the required packages:
+   ```bash
+   pip install -r requirements.txt
 
