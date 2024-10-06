@@ -12,7 +12,6 @@
 - [Training](#training)
 - [Evaluation](#evaluation)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Introduction
 This project implements a two-stage intent recognition system using BERT (Bidirectional Encoder Representations from Transformers). The goal is to classify user queries into two categories: **Symptom Checker** and **Non-Symptom Checker**. The project leverages the Hugging Face Transformers library for model training and evaluation.
@@ -49,9 +48,26 @@ Make sure you have the following Python libraries installed:
    git clone https://github.com/yourusername/intent-recognition-system.git
    cd intent-recognition-system
 2. Install the required libraries:
-```bash
-Copy code
-pip install -r requirements.txt
+   ```bash
+   Copy code
+   pip install -r requirements.txt
 
+## Usage
+1. Load the dataset and preprocess it.
+2. Train the BERT models using the provided functions.
+3. Make predictions on new queries using the predict_intent function.
 
+## Training
+The training function utilizes the AdamW optimizer and the cross-entropy loss function to optimize the BERT model's parameters over a specified number of epochs. The training process includes:
+* Tokenizing input sentences.
+* Performing forward and backward passes.
+* Updating the model weights based on the loss.
 
+## Evaluation
+After making predictions, the model's performance is evaluated using:
+* Accuracy: Percentage of correct predictions.
+* F1-Score: A balance between precision and recall, useful for imbalanced datasets.
+* Detailed metrics for both classes using classification_report.
+
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue for any improvements or suggestions.
