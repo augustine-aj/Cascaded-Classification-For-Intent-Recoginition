@@ -22,5 +22,14 @@ To get a local copy of the project up and running, follow these simple steps.
 
 ## Project Structure
 The project directory has the following structure:
-project-directory/ ├── data/ │ └── faq_queries_intents.csv ├── models/ │ ├── route_model/ │ └── non_symptom_model/ ├── notebooks/ │ └── intent_recognition.ipynb ├── requirements.txt └── README.md
+project-directory/
+├── data/
+│   └── faq_queries_intents.csv   # Your dataset file
+├── models/
+│   ├── route_model/              # Folder for the binary classification model
+│   └── non_symptom_model/        # Folder for the non-symptom checker classification model
+├── notebooks/
+│   └── intent_recognition.ipynb  # Your Jupyter notebook with the model code
+├── requirements.txt              # File listing the Python dependencies
+└── README.md                     # Project README file with information
 
